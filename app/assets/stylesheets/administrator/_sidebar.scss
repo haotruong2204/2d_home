@@ -1,0 +1,68 @@
+// @mixin border-right($size, $color){
+//   border-right: $size solid $color;
+// }
+
+// .section-left {
+//   text-align: center;
+//   width: 219px;
+//   background: $color-white 0% 0% no-repeat padding-box;
+//   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+
+//   z-index: 1;
+//   min-height: 100%;
+//   position: fixed;
+//   @include border-right(1px, $color-border);
+
+//   .sidebar {
+//     &__logo {
+//       font-size: 30px;
+//       margin-top: 64px;
+//       margin-bottom: 48px;
+
+//       a {
+//         text-decoration: none;
+//         color: $color-default;
+//       }
+//     }
+
+//     &__menu {
+//       text-align: left;
+
+//       li {
+//         height: 40px;
+//         line-height: 40px;
+//         cursor: pointer;
+//         @include flex(flex, normal, center);
+
+//         &:hover {
+//           @include border-right(4px, $color-bd-active);
+//         }
+
+//         &:last-child {
+//           width: 216px;
+//           position: absolute;
+//           bottom: 24px;
+//         }
+
+//         a {
+//           font-size: 14px;
+//           color: $color-default;
+//           text-decoration: none;
+//           @include flex(flex, normal, center);
+//           padding: 0 24px;
+//           span {
+//             margin-left: 14px
+//           }
+//         }
+
+//         .events-none {
+//           pointer-events: none;
+//         }
+//       }
+
+//       li.active {
+//         @include border-right(4px, $color-bd-active);
+//       }
+//     }
+//   }
+// }

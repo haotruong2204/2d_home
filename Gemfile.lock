@@ -143,6 +143,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-async (1.0.0)
+      activejob (>= 5.0)
+      devise (>= 4.0)
     devise-jwt (0.10.0)
       devise (~> 4.0)
       warden-jwt_auth (~> 0.6)
@@ -418,7 +421,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.4)
     sshkit (1.21.3)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -482,6 +484,7 @@ DEPENDENCIES
   config
   deep_cloneable (~> 3.2.0)
   devise
+  devise-async
   devise-jwt
   dotenv-rails
   ed25519
@@ -509,11 +512,11 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rake
   rubocop-rspec
-  sass-rails (~> 6.0)
+  sass-rails
   selenium-webdriver
   sidekiq (~> 6.4, >= 6.4.2)
   simple_form
-  sqlite3 (~> 1.4)
+  sprockets-rails
   stimulus-rails
   strip_attributes
   turbo-rails

@@ -1,0 +1,59 @@
+<div class="sidebar">
+  <div class="sidebar__logo">
+    <a href="<%= administrator_root_path %>">
+      <img src="<%= asset_path("opinion-authenticate.png") %>" alt="">
+    </a>
+  </div>
+  <div class="sidebar__menu">
+    <ul>
+      <li class="<%= active_sidebar(administrator_root_path, 'posts') %>">
+        <a class="" href="<%= administrator_root_path %>">
+          <img src="<%= asset_path("icon/product.svg") %>" alt="icon-product">
+          <span>Posts</span>
+        </a>
+      </li>
+      <li class="<%= active_sidebar(administrator_root_path, 'categories') %>">
+        <a class="" href="<%= administrator_root_path %>">
+          <img src="<%= asset_path("icon/category.svg") %>" alt="icon-category">
+          <span>Categories</span>
+        </a>
+      </li>
+      <li class="<%= active_sidebar(administrator_root_path, 'tags') %>">
+        <a class="" href="<%= administrator_root_path %>">
+          <img src="<%= asset_path("icon/tag.svg") %>" alt="icon-tag">
+          <span>Tags</span>
+        </a>
+      </li>
+      <li class="<%= active_sidebar(administrator_root_path, 'reports') %>">
+        <a class="" href="<%= administrator_root_path %>">
+          <img src="<%= asset_path("icon/detail.svg") %>" alt="icon-report">
+          <span>Reports</span>
+        </a>
+      </li>
+      <li class="">
+        <a class="" href="">
+          <img src="<%= asset_path("icon/comment.svg") %>" alt="icon-comment">
+          <span>Comments</span>
+        </a>
+      </li>
+      <li class="">
+        <a class="" href="">
+          <img src="<%= asset_path("icon/user.svg") %>" alt="icon-user">
+          <span>Accounts</span>
+        </a>
+      </li>
+      <li class="">
+        <a class="" href="">
+          <img src="<%= asset_path("icon/activity.svg") %>" alt="icon-activity">
+          <span>Traffics</span>
+        </a>
+      </li>
+      <li class="">
+        <a class="" href="">
+          <img src="<%= asset_path("icon/settings.svg") %>" alt="icon-settings">
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

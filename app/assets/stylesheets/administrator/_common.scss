@@ -1,0 +1,22 @@
+$color-warning: #ffc107;
+$size: 4px;
+$bg-warning: #fff5d6;
+$color-success: #28a745;
+$bg-success: #d8ffe2;
+$color-error: #ff4a72;
+$bg-error: #fee5eb;
+$color-white: #fff;
+$bg: #f5f5f5;
+$color-default: #5F5F5F;
+$color-bd-active: #608CA9;
+$color-border: #ddd;
+$color-primary: #2F4858;
+$color-pink-secondary: #FFBECD;
+$border-color: #c2c2c2;
+$font: 'Montserrat',Arial,Helvetica,sans-serif !important;
+
+@mixin flex($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
