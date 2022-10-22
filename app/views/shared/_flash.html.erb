@@ -1,0 +1,19 @@
+<% flash.each do |type, message| %>
+  <% next if message.blank? %>
+  <div id="toast" data-controller="toast">
+    <div class="toast toast--<%= flash_class type.to_sym %>" style="animation: 0.3s ease 0s 1 normal none running slideInLeft, 1s linear 5s 1 normal forwards running fadeOut;">
+      <div class="toast__icon">
+        <img src="<%= asset_path("icon/#{flash_class type.to_sym}.svg") %>">
+      </div>
+      <div class="toast__body">
+        <div class="toast__title"><%= flash_class type.to_sym %></div>
+        <div class="toast__message">
+          <%= message.html_safe %>
+        </div>
+      </div>
+      <div class="toast__close" data-action="click->toast#close">
+        <img src="<%= asset_path("icon/close.svg") %>">
+      </div>
+    </div>
+  </div>
+<% end %>

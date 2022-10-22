@@ -1,0 +1,38 @@
+// .header {
+//   color: $color-default;
+//   border-bottom: 1px solid #BDBDBD;
+//   width: 100%;
+//   z-index: 1;
+//   background: #fff;
+//   height: 64px;
+//   line-height: 1;
+//   @include flex(flex, space-between, center);
+
+//   &__title {
+//     margin-left: 24px;
+//     font-weight: 500;
+//     @include flex(flex, normal, center);
+
+//     span {
+//       margin-left: 8px;
+//       font-size: 18px;
+//     }
+//   }
+
+//   &__user {
+//     margin-right: 24px;
+//     @include flex(flex, normal, center);
+
+//     span {
+//       color: #FF698B;
+//       margin: 0 8px;
+//     }
+
+//     svg {
+//       padding: 2px;
+//       border: 1px solid $color-default;
+//       border-radius: 50%;
+//       cursor: pointer;
+//     }
+//   }
+// }

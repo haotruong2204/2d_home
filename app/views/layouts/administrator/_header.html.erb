@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="header__title">
+    <% if @header_post %>
+      <img src="<%= asset_path("icon/product.svg") %>" alt="icon-product">
+      <span>Post List</span>
+    <% elsif @header_category %>
+      <img src="<%= asset_path("icon/category.svg") %>" alt="icon-category">
+      <span>Category List</span>
+    <% elsif @header_tag %>
+      <img src="<%= asset_path("icon/tag.svg") %>" alt="icon-tag">
+      <span>Tag List</span>
+    <% elsif @header_report %>
+      <img src="<%= asset_path("icon/detail.svg") %>" alt="icon-report">
+      <span>Report List</span>
+    <% end %>
+  </div>
+  <div class="header__user">
+    <span><%= current_administrator_administrator.email %></span>
+    <%= link_to destroy_administrator_administrator_session_path do %>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2F4858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    <% end %>
+  </div>
+</div>

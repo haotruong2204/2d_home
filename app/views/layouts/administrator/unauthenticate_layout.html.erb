@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login | 2D Home</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <%= favicon_link_tag asset_path("favicon.png"), rel: "icon", type: "image/x-icon" %>
+    <%= stylesheet_link_tag :application_administrator, media: "all" %>
+    <%= csrf_meta_tags %>
+    <%= javascript_importmap_tags %>
+    <meta name="google" content="notranslate">
+  </head>
+  <body class="<%= yield :body_class %>">
+    <%= render "shared/flash" %>
+    <div class="unauthenticate__left">
+    </div>
+    <div class="unauthenticate__right">
+      <%= yield %>
+    </div>
+  </body>
+</html>
