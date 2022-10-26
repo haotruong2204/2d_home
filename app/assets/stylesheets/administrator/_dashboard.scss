@@ -1,71 +1,71 @@
-// .dashboard {
-//   color: $color-default;
+.dashboard {
+  color: $color-default;
 
-//   &__calendar {
-//     height: 64px;
-//     background-color: $color-white;
-//     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
-//     @include flex(flex, normal, center);
-//     padding: 0 24px;
+  &__calendar {
+    height: 64px;
+    background-color: $color-white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+    @include flex(flex, normal, center);
+    padding: 0 24px;
 
-//     .filter {
-//       padding: 8px;
-//       border: 1px solid #BDBDBD;
-//       border-radius: 4px;
-//       @include flex(flex, normal, center);
-//       cursor: pointer;
+    .filter {
+      padding: 8px;
+      border: 1px solid #bdbdbd;
+      border-radius: 4px;
+      @include flex(flex, normal, center);
+      cursor: pointer;
 
-//       svg {
-//         margin-right: 8px;
-//       }
-//     }
-//   }
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
 
-//   &__content {
-//     padding: 24px 16px 24px 24px;
+  &__content {
+    padding: 24px 16px 24px 24px;
 
-//     .statistical {
-//       display: flex;
-//       flex-wrap: wrap;
+    .statistical {
+      display: flex;
+      flex-wrap: wrap;
 
-//       &__item {
-//         border: solid 1px #bfbfbf;
-//         border-radius: 8px;
-//         background: #fff;
-//         flex-basis: calc(25% - 8px);
-//         padding: 16px 16px 16px 16px;
-//         margin-right: 8px;
-//         margin-bottom: 8px;
+      &__item {
+        border: solid 1px #bfbfbf;
+        border-radius: 8px;
+        background: #fff;
+        flex-basis: calc(25% - 8px);
+        padding: 16px 16px 16px 16px;
+        margin-right: 8px;
+        margin-bottom: 8px;
 
-//         .item-head {
-//           @include flex(flex, space-between, normal);
-//           font-weight: bold;
+        .item-head {
+          @include flex(flex, space-between, normal);
+          font-weight: bold;
 
-//           .title {
-//             font-size: 18px;
-//           }
+          .title {
+            font-size: 18px;
+          }
 
-//           .icon {
-//             color: #1f95e0;
-//           }
-//         }
+          .icon {
+            color: #1f95e0;
+          }
+        }
 
-//         .item-quantity {
-//           margin-top: 10px;
-//           text-align: right;
-//           font-weight: bold;
+        .item-quantity {
+          margin-top: 10px;
+          text-align: right;
+          font-weight: bold;
 
-//           .quantily {
-//             font-size: 24px;
-//             margin-bottom: 4px;
-//           }
+          .quantily {
+            font-size: 24px;
+            margin-bottom: 4px;
+          }
 
-//           .current {
-//             font-size: 12px;
-//             color: #56B194;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+          .current {
+            font-size: 12px;
+            color: #56b194;
+          }
+        }
+      }
+    }
+  }
+}

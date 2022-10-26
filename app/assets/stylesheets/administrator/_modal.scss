@@ -1,171 +1,171 @@
-// .modal-delete,
-// .modal-shortcode {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   z-index: 1050;
-//   outline: 0;
-//   overflow: hidden;
-//   background: rgba(0, 0, 0, 0.12);
+.modal-delete,
+.modal-shortcode {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.12);
 
-//   &__centered {
-//     max-width: 540px;
-//     margin: auto;
-//     @include flex(flex, normal, center);
-//     min-height: calc(100% - (1.75rem * 2));
+  &__centered {
+    max-width: 540px;
+    margin: auto;
+    @include flex(flex, normal, center);
+    min-height: calc(100% - (1.75rem * 2));
 
-//     .modal-content {
-//       background-color: $color-white;
-//       margin: auto;
-//       border: none;
-//       border-radius: 8px;
-//       box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.38);
-//       width: 100%;
-//       outline: 0;
-//       padding: 28px;
+    .modal-content {
+      background-color: $color-white;
+      margin: auto;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.38);
+      width: 100%;
+      outline: 0;
+      padding: 28px;
 
-//       &__header {
-//         font-size: 18px;
-//         text-align: center;
-//         color: #000;
-//       }
+      &__header {
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+      }
 
-//       &__confirm {
-//         @include flex(flex, space-between, normal);
-//         font-size: 16px;
-//         vertical-align: middle;
-//         margin-top: 24px;
-//         cursor: pointer;
+      &__confirm {
+        @include flex(flex, space-between, normal);
+        font-size: 16px;
+        vertical-align: middle;
+        margin-top: 24px;
+        cursor: pointer;
 
-//         &--cancel {
-//           @include flex(flex, center, normal);
-//           flex-basis: 46%;
-//           background: #e6e6e6;
-//           box-shadow: 0px 1px 4px #b7bcbd;
-//           border: 2px solid #e6e6e6;
-//           color: #333;
-//           text-align: center;
-//           padding: 8.5px 0;
-//           border-radius: 4px;
-//           margin-right: 0.25rem;
-//         }
+        &--cancel {
+          @include flex(flex, center, normal);
+          flex-basis: 46%;
+          background: #e6e6e6;
+          box-shadow: 0px 1px 4px #b7bcbd;
+          border: 2px solid #e6e6e6;
+          color: #333;
+          text-align: center;
+          padding: 8.5px 0;
+          border-radius: 4px;
+          margin-right: 0.25rem;
+        }
 
-//         &--apply {
-//           @include flex(flex, center, normal);
-//           flex-basis: 46%;
-//           text-align: center;
-//           padding: 8.5px 0;
-//           border-radius: 4px;
-//           background: #2fb7ed;
-//           border: 2px solid #2fb7ed;
-//           color: $color-white;
-//           box-shadow: 0px 1px 4px #007eb0;
-//           line-height: 1;
-//         }
-//       }
-//     }
-//   }
-// }
+        &--apply {
+          @include flex(flex, center, normal);
+          flex-basis: 46%;
+          text-align: center;
+          padding: 8.5px 0;
+          border-radius: 4px;
+          background: #2fb7ed;
+          border: 2px solid #2fb7ed;
+          color: $color-white;
+          box-shadow: 0px 1px 4px #007eb0;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
 
-// .modal-shortcode {
-//   &__centered {
-//     max-width: 60rem;
-//     min-height: 100%;
+.modal-shortcode {
+  &__centered {
+    max-width: 60rem;
+    min-height: 100%;
 
-//     .modal-content {
-//       &__header {
-//         @include flex(flex, space-between, center);
-//         border-bottom: 1px solid $border-color;
-//         padding-bottom: 1rem;
+    .modal-content {
+      &__header {
+        @include flex(flex, space-between, center);
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 1rem;
 
-//         span:last-child {
-//           cursor: pointer;
-//         }
-//       }
+        span:last-child {
+          cursor: pointer;
+        }
+      }
 
-//       &__main {
-//         margin-top: 1.125rem;
-//         min-height: 400px;
-//         border: 1px solid #f5f5f5;
-//         border-radius: 0.5rem;
-//         overflow: auto;
-//         padding: 1rem;
+      &__main {
+        margin-top: 1.125rem;
+        min-height: 400px;
+        border: 1px solid #f5f5f5;
+        border-radius: 0.5rem;
+        overflow: auto;
+        padding: 1rem;
 
-//         .info-survey {
-//           @include flex(flex, space-between, center);
-//           font-size: 0.875rem;
+        .info-survey {
+          @include flex(flex, space-between, center);
+          font-size: 0.875rem;
 
-//           p {
-//             line-height: 1;
-//             margin: 8px 0;
-//             color: #202223;
-//             font-weight: 600;
-//           }
+          p {
+            line-height: 1;
+            margin: 8px 0;
+            color: #202223;
+            font-weight: 600;
+          }
 
-//           &__right {
-//             p {
-//               border: 1px solid #babfc3;
-//               border-radius: 4px;
-//               background: #f6f6f7;
-//               height: 36px;
-//               @include flex(flex, space-between, center);
-//               padding: 0 8px;
+          &__right {
+            p {
+              border: 1px solid #babfc3;
+              border-radius: 4px;
+              background: #f6f6f7;
+              height: 36px;
+              @include flex(flex, space-between, center);
+              padding: 0 8px;
 
-//               img {
-//                 width: 14px;
-//                 margin-right: 8px;
-//               }
-//             }
-//           }
-//         }
+              img {
+                width: 14px;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
 
-//         .list-question {
-//           margin-top: 48px;
-//           max-height: 50vh;
-//           overflow: auto;
+        .list-question {
+          margin-top: 48px;
+          max-height: 50vh;
+          overflow: auto;
 
-//           table {
-//             width: 100%;
+          table {
+            width: 100%;
 
-//             thead {
-//               background: #e5e5e5;
-//               height: 48px;
-//               border-bottom: 2px solid;
+            thead {
+              background: #e5e5e5;
+              height: 48px;
+              border-bottom: 2px solid;
 
-//               th {
-//                 text-align: left;
-//                 padding: 0 12px;
-//                 color: #000;
-//                 font-weight: 600;
-//               }
-//             }
+              th {
+                text-align: left;
+                padding: 0 12px;
+                color: #000;
+                font-weight: 600;
+              }
+            }
 
-//             tbody {
-//               tr {
-//                 height: 44px;
-//                 border-bottom: 1px solid #a3a3a3;
+            tbody {
+              tr {
+                height: 44px;
+                border-bottom: 1px solid #a3a3a3;
 
-//                 td {
-//                   padding: 0 12px;
+                td {
+                  padding: 0 12px;
 
-//                   &:first-child {
-//                     width: 60%;
-//                   }
+                  &:first-child {
+                    width: 60%;
+                  }
 
-//                   span:first-child {
-//                     border: 1px solid $border-color;
-//                     border-radius: 4px;
-//                     padding: 4px 32px;
-//                     cursor: pointer;
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+                  span:first-child {
+                    border: 1px solid $border-color;
+                    border-radius: 4px;
+                    padding: 4px 32px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
