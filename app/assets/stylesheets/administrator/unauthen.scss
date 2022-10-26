@@ -1,4 +1,4 @@
-$text-dark: #5f5f5f;
+@import "./common";
 
 @mixin flex($display, $justify-content, $align-items) {
   display: $display;
@@ -10,12 +10,11 @@ $text-dark: #5f5f5f;
   width: 100%;
   height: 100vh;
   @include flex(flex, normal, normal);
-  
+
   &__left {
     width: 50%;
     background-repeat: no-repeat;
-    background: image-url('background_pink.png');
-    background-position: 20%;
+    background: image-url("background_unauthen.png");
     background-size: cover;
   }
 
@@ -29,7 +28,7 @@ $text-dark: #5f5f5f;
       width: 360px;
 
       .logo {
-        margin-bottom: 42px;
+        margin-bottom: 28px;
         text-align: center;
         font-size: 40px;
       }
@@ -44,8 +43,8 @@ $text-dark: #5f5f5f;
 
           input {
             width: 100%;
-            background: #ffebef;
-            color: $text-dark;
+            background: #ecf4f5;
+            color: $color-default;
             border: none;
             border-radius: 5px;
             font-size: 14px;
@@ -55,7 +54,7 @@ $text-dark: #5f5f5f;
           }
 
           .error {
-            color: #EC1115;
+            color: #ec1115;
             font-size: 14px;
             display: block;
             margin-top: 4px;
@@ -64,11 +63,11 @@ $text-dark: #5f5f5f;
 
           &--error {
             border-radius: 5px !important;
-            background: #F7E6E6 !important;
-            border-bottom: 2px solid #EC1111 !important;
+            background: #f7e6e6 !important;
+            border-bottom: 2px solid #ec1111 !important;
           }
         }
-        
+
         &__submit {
           margin-top: 16px;
           margin-bottom: 8px;
@@ -80,8 +79,9 @@ $text-dark: #5f5f5f;
           height: 40px;
           line-height: 40px;
           font-size: 14px;
-          background: #f9486e;
+          background: #453334;
           cursor: pointer;
+          font: 16px/1.6em $font;
         }
       }
 
@@ -109,7 +109,7 @@ $text-dark: #5f5f5f;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .unauthenticate {
     &__left {
       display: none;
@@ -118,7 +118,7 @@ $text-dark: #5f5f5f;
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
-      background: image-url('background_pink.png');
+      background: image-url("background_unauthen.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

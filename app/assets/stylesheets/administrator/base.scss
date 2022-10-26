@@ -72,8 +72,8 @@ a {
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  border: 1px solid #ffebef;
-  box-shadow: 0 0 0px 1000px #ffebef inset;
+  border: 1px solid #ecf4f5;
+  box-shadow: 0 0 0px 1000px #ecf4f5 inset;
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: $color-default !important;
 }
@@ -92,6 +92,7 @@ input,
 textarea {
   outline: none;
   border-radius: 4px;
+  font: 14px/1.6em $font;
 
   &:read-only {
     background: #ddd;

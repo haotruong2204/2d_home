@@ -1,1 +1,72 @@
-administrators
+<div class="dashboard">
+  <div class="dashboard__calendar">
+    <div class="filter">
+      <img src="<%= asset_path("icon/filter.svg") %>" alt="icon-filter">
+      Filter
+    </div>
+  </div>
+  <div class="dashboard__content">
+    <div class="statistical">
+      <div class="statistical__item">
+        <div class="item-head">
+          <div class="title">Total Category</div>
+          <div class="icon">
+             <img class="size-24" src="<%= asset_path("icon/total_category.svg") %>" alt="icon-total-category">
+          </div>
+        </div>
+        <div class="item-quantity">
+          <div class="quantily"><%#= Category.count %></div>
+          <div class="current">+<%#= Category.from_current_month %> per month</div>
+        </div>
+      </div>
+      <div class="statistical__item">
+        <div class="item-head">
+          <div class="title">Total Post</div>
+          <div class="icon">
+            <img class="size-24" src="<%= asset_path("icon/total_product.svg") %>" alt="icon-total-product">
+          </div>
+        </div>
+        <div class="item-quantity">
+          <div class="quantily"><%#= Post.count %></div>
+          <div class="current">+<%#= Post.from_current_month %> per month</div>
+        </div>
+      </div>
+      <div class="statistical__item">
+        <div class="item-head">
+          <div class="title">Total Report</div>
+          <div class="icon">
+            <img class="size-24" src="<%= asset_path("icon/detail.svg") %>" alt="icon-reports">
+          </div>
+        </div>
+        <div class="item-quantity">
+          <div class="quantily"><%#= Report.count %></div>
+          <div class="current">+<%#= Report.from_current_month %> per month</div>
+        </div>
+      </div>
+      <div class="statistical__item">
+        <div class="item-head">
+          <div class="title">Total Tag</div>
+          <div class="icon">
+            <img class="size-24" src="<%= asset_path("icon/tag.svg") %>" alt="icon-tag">
+          </div>
+        </div>
+        <div class="item-quantity">
+          <div class="quantily"><%#= Tag.count %></div>
+          <div class="current">+<%#= Tag.from_current_month %> per month</div>
+        </div>
+      </div>
+      <div class="statistical__item">
+        <div class="item-head">
+          <div class="title">Total Traffic</div>
+          <div class="icon">
+            <img class="size-24" src="<%= asset_path("icon/activity.svg") %>" alt="icon-activity">
+          </div>
+        </div>
+        <div class="item-quantity">
+          <div class="quantily">6789</div>
+          <div class="current">+100 per month</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

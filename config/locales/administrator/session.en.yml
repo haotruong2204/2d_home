@@ -1,0 +1,10 @@
+en:
+  administrator:
+    sessions:
+      new:
+        email: "Email"
+        password: "Password"
+        login_form: "フォム"
+        placeholder_email: "Typing here ..."
+        placeholder_password: "Typing here ..."
+        submit: "Login"
